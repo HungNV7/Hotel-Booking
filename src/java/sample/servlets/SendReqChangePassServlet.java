@@ -15,7 +15,6 @@ import org.apache.log4j.Logger;
 import sample.daos.UserDAO;
 import sample.utils.Encryption;
 import sample.utils.SendingEmail;
-import sun.security.pkcs11.wrapper.Functions;
 
 /**
  *

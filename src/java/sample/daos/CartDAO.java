@@ -184,21 +184,21 @@ public class CartDAO {
                 String sql = "";
                 if (id.isEmpty()) {
                     sql = "SELECT orderID\n"
-                            + "FROM tblOrder WHERE CAST(bookingDate AS DATE) = ? AND userID = ? AND (statusID = 4 OR statusID = 5)";
+                            + "FROM tblOrder WHERE CAST(bookingDate AS DATE) = ? AND userID = ? AND (statusID = 4 OR statusID = 5 OR statusId = 7)";
                     stm = conn.prepareStatement(sql);
                     stm.setDate(1, date);
                     stm.setString(2, userID);
                 }
                 if (date == null) {
                     sql = "SELECT orderID\n"
-                            + "FROM tblOrder WHERE orderID LIKE ? AND userID = ? AND (statusID = 4 OR statusID = 5)";
+                            + "FROM tblOrder WHERE orderID LIKE ? AND userID = ? AND (statusID = 4 OR statusID = 5 OR statusId = 7)";
                     stm = conn.prepareStatement(sql);
                     stm.setString(1, id);
                     stm.setString(2, userID);
                 }
                 if (!id.isEmpty() && date != null) {
                     sql = "SELECT orderID\n"
-                            + "FROM tblOrder WHERE CAST(bookingDate AS DATE) = CAST(? AS DATE) AND orderID LIKE ? AND userID = ? AND (statusID = 4 OR statusID = 5)";
+                            + "FROM tblOrder WHERE CAST(bookingDate AS DATE) = CAST(? AS DATE) AND orderID LIKE ? AND userID = ? AND (statusID = 4 OR statusID = 5 OR statusId = 7)";
                     stm = conn.prepareStatement(sql);
                     stm.setDate(1, date);
                     stm.setString(2, id);

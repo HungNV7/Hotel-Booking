@@ -123,11 +123,9 @@
                                         <div class="modal-content">
                                             <div class="modal-header">
                                                 <h5 class="modal-title" id="exampleModalLabel">Cancel Booking</h5>
-                                                <c:if test="${cart.status == 5}">
                                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                         <span aria-hidden="true">&times;</span>
                                                     </button>
-                                                </c:if>
                                             </div>
                                             <div class="modal-body">
                                                 Do you really want to cancel?
@@ -153,6 +151,7 @@
                                     <th>Quantity</th>
                                     <th>Price</th>
                                     <th>Total</th>
+                                    <th></th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -164,6 +163,11 @@
                                         <td>${room.quantity}</td>
                                         <td>${room.price}</td>
                                         <td>${room.price * room.quantity}</td>
+                                        <td>       
+                                            <c:if test="${cart.status == 7}">
+                                                <a class="btn btn-secondary" href="feedback.jsp?index=1&id=${room.id}">Feedback</a>
+                                            </c:if>
+                                        </td>
                                     </tr>
                                 </c:forEach>
                             <td></td>

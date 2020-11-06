@@ -45,7 +45,7 @@ public class ApplyServlet extends HttpServlet {
             if(discount != null){
                 CartDTO cart = (CartDTO) session.getAttribute("CART");
                 cart.setDiscountID(discountCode);
-                double finalTotal = cart.getFinalTotal() * (1 - (double)discount.getPercentage()/100);
+                double finalTotal = cart.getTotal()* (1 - (double)discount.getPercentage()/100);
                 cart.setFinalTotal(Double.parseDouble(new DecimalFormat("#########.##").format(finalTotal)));
                 cart.setDiscountID(discountCode);
             }else{

@@ -3,17 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/FPT/CN5/LAB231/Hotel%20Booking/web/history.jsp</file>
-            <file>file:/D:/FPT/CN5/LAB231/Hotel%20Booking/src/java/sample/filters/AuthenFilter.java</file>
-            <file>file:/D:/FPT/CN5/LAB231/Hotel%20Booking/src/java/sample/servlets/NextCheckoutServlet.java</file>
-            <file>file:/D:/FPT/CN5/LAB231/Hotel%20Booking/src/java/sample/daos/RoomDAO.java</file>
-            <file>file:/D:/FPT/CN5/LAB231/Hotel%20Booking/web/searchHistory.jsp</file>
-            <file>file:/D:/FPT/CN5/LAB231/Hotel%20Booking/src/java/sample/servlets/ConfirmBookServlet.java</file>
-            <file>file:/D:/FPT/CN5/LAB231/Hotel%20Booking/src/java/sample/servlets/SearchHistoryServlet.java</file>
-            <file>file:/D:/FPT/CN5/LAB231/Hotel%20Booking/web/cart.jsp</file>
-            <file>file:/D:/FPT/CN5/LAB231/Hotel%20Booking/src/java/sample/daos/CartDAO.java</file>
-            <file>file:/D:/FPT/CN5/LAB231/Hotel%20Booking/web/nextCart.jsp</file>
-            <file>file:/D:/FPT/CN5/LAB231/Hotel%20Booking/src/java/sample/servlets/CheckoutServlet.java</file>
+            <file>file:/D:/FPT/CN5/LAB231/Hotel%20Booking/web/home.jsp</file>
+            <file>file:/D:/FPT/CN5/LAB231/Hotel%20Booking/web/reset.jsp</file>
+            <file>file:/D:/FPT/CN5/LAB231/Hotel%20Booking/web/register.jsp</file>
+            <file>file:/D:/FPT/CN5/LAB231/Hotel%20Booking/web/login.jsp</file>
+            <file>file:/D:/FPT/CN5/LAB231/Hotel%20Booking/web/detail.jsp</file>
         </group>
     </open-files>
 </project-private>

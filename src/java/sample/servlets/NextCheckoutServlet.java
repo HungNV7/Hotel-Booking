@@ -61,8 +61,8 @@ public class NextCheckoutServlet extends HttpServlet {
                     session.setAttribute("RETURN_DATE", returnDate);
                     session.setAttribute("GAP", gap);
 
-                    cart.setFinalTotal(cart.getTotal() * gap);
-
+                    cart.setTotal(cart.getTotal() * gap);
+                    cart.setFinalTotal(cart.getTotal());
                     RoomDAO roomDAO = new RoomDAO();
                     List<String> msg = roomDAO.checkValid(cart);
                     if (msg.size() == 0) {
